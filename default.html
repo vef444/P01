@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<link rel="icon" href="favicon.ico"> 
+
+<link rel="stylesheet" type="text/css" href="default.css" />
+
+<link rel="stylesheet" type="text/css" href="slider/js-image-slider.css" />
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="slider/js-image-slider.js" type="text/javascript"></script>
+  
+<script type="text/javascript">
+
+function addBookmark()
+{
+    var success=false;
+
+    // try each until all fail...
+    try {
+        window.external.AddFavorite(window.location, document.title);
+        success=true;
+   } catch(e) {}
+
+    try {
+        window.sidebar.addPanel(document.title,location.href,'');
+        success=true;
+    } catch(e) {}
+
+    if(!success)
+    {
+        alert("Press CTRL+D, or CMD+D\r\nto manually bookmark this page.");
+    }
+}
+ 
+</script>
+  
+<title>KASCAD</title>
+</head>
+
+<body id=homepage>
+
+<div id=header>
+
+<a id="logo" class="logocl" title="Kascad" href=""><img class="logoimg" src="kascad_tr.png" /></img></a>
+
+
+<ul id="main-acc" class="font-Bold">
+<li><a id="main-map" title="map" href="list.html">saitu karte</a></li>
+
+<li><a id="main-fav" title="favorites" href= 
+     "javascript:addBookmark()");>pievienot favorītos</a></li>
+</ul>
+
+<ul id="header-info" class="font-Regular">
+<li>
++371 23232323
+</li>
+<li>
+<a href="mailto:kascad@info.lv" target="_top">KASCAD-AT-INFO.LV</a>
+</li>
+</ul>
+
+<ul id="main-menu" class="font-Regular">
+
+<li><a id="main" title="main" href="default.html">GALVENĀ</a></li>
+
+<li><a id="about" title="about" href="aboutus.html">PAR MUMS</a></li>
+
+<li><a id="offers" title="offers" href="offers.html">PIEDĀVĀJAM</a></li>
+
+<li><a id="portfolio" title="portfolio" href="works.html">MUSU DARBI</a></li>
+
+<li><a id="contacts" title="contacts" href="contacts.html"">KONTAKTI</a></li>
+</ul>
+
+<ul id=languages class="font-Regular">
+<li>
+<a class="separator-right" href="#">LV</a>
+</li>
+<li>
+<a class="separator-right" href="#">RU</a>
+</li>
+<li>
+<a href="#">EN</a>
+</li>
+</ul>
+
+</div>
+
+<div id=content>
+
+<div id=main-text class="font-Regular">
+<h1>PAR MUMS</h1>
+
+<p>абвгдеёжекууваричсмсм Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+ 
+</p>
+
+<div id="more">
+
+<a href="aboutus.html" class="font-Regular">VAIRĀK</a>
+</div>
+
+<div id="more2"> 
+
+<a href="works.html" class="font-Regular">VAIRĀK</a>
+</div>
+
+<div id="more3"> 
+
+<a href="kascad.pdf" class="font-Regular">SAGLABĀT PREZENTĀCIJU</a>
+</div>
+
+</div>
+
+<div id="sliderFrame">
+<img id="edge"  src="add_edge.png" />
+<img id="edge2" src="add_edge2.png" />
+        <div id="slider">
+                <img src="kascad_slide_1.png" alt="Objekts 1" />
+            <img src="kascad_slide_2.png" alt="Objekts 2" />
+            <img src="kascad_slide_3.png" alt="Objekts 3" />
+        </div>
+</div>
+
+</div>
+
+<div id="footler">
+
+<div id="footler-nav" class="font-Regular">
+
+<li>
+
+<ul class="font-Regular">
+KOMPANIJA
+<li>
+<a href="aboutus.html">Par mums</a>
+</li>
+<li>
+<a href="offers.html">Piedāvājam</a>
+</li>
+<li>
+<a href="works.html">Musu darbi</a>
+</li>
+<li>
+<a href="contacts.html">Kontakti</a>
+</li>
+</ul>
+
+<ul class="font-Regular">
+PIEDAVĀJĀM
+<li>
+<a href="offers.html">Būvniecība</a>
+</li>
+<li>
+<a href="offers.html">Projektu vadība</a>
+</li>
+<li>
+<a href="offers.html">Uzraudzība</a>
+</li>
+</ul>
+
+<ul class="font-Regular">
+KONTAKTI
+<li><a href="contacts.html">Kontaktu informācija</a>
+</li>
+<li>
+<a href="contacts.html">Kontaktu forma</a>
+</li>
+<li>
+<a href="contacts.html">Parādīt karti</a>
+</li>
+</ul>
+
+</li>
+
+<div id="copyright" class="font-Bold">
+<ul>
+<li>Copyright &copy; 2013 KASCAD.LV</li>
+<li>Visas tiesibās ir aizsargātas</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
